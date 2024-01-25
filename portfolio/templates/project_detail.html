@@ -1,0 +1,20 @@
+<!-- portfolio/templates/project_detail.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ project.title }} - Project Detail{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h2>{{ project.title }}</h2>
+        <img src="{{ project.image.url }}" style="max-width: 300px; height: auto;" alt="{{ project.title }}">
+        <p class="mt-3">{{ project.description }}</p>
+        {% if project.custom_content %}
+            <p>{{ project.custom_content | safe }}</p>
+         
+        {% else %}
+            <p>This is the default text content for {{ project.title }}.</p>
+        {% endif %}
+        <!-- Add more details as needed -->
+    </div>
+{% endblock %}

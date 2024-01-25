@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}My Portfolio{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+<section id="hero" class="bg-info py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="{% static 'images/bishi.jpg' %}" alt="Ibish Selmani" class="img-fluid rounded-lg mb-9" style="width: 150px;">
+            </div>
+            <div class="col-md-8">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body text-center">
+                        <h1 class="display-4">Ibish Selmani</h1>
+                        <p class="lead">Full Stack Developer | Tech Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-primary">About Me</h2>
+                    <p class="lead text-secondary">
+                        I'm a Full Stack Developer fueled by a commitment to continuous learning, staying at the forefront of technological advancements.
+                        Besides being a web developer, I'm a passionate tech enthusiast dedicated to innovating and delivering seamless digital experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 text-primary">Skills</h2>
+        <div class="row">
+
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Programming Languages</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-info text-white">Python</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-info text-white">HTML</li>
+                            <li class="list-group-item bg-info text-white">CSS</li>
+                            <li class="list-group-item bg-info text-white">Django</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Database Management</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-info text-white">PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Version Control</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-info text-white">Git and Github</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Server Management</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-info text-white">Windows Server 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Additional Skills -->
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Additional Skills</h5>
+                <p class="card-text">
+                    Tech Expert with Diverse Skills:
+                    Computer Repair | Software Configuration | Customer Service.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Education Section -->
+<section id="education" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 text-primary">Education</h2>
+
+        <!-- First Education Entry -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">2005-2010: Computer Science and Communication</h5>
+                <p class="card-text">SEEU University, North Macedonia</p>
+            </div>
+        </div>
+
+        <!-- Second Education Entry -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">2023-2024: Python Backend Development</h5>
+                <p class="card-text">DCI Digital Career Institute GmbH, Berlin, Germany</p>
+                <strong>Technologies:</strong>
+                <ul class="list-group">
+                    <li class="list-group-item bg-info text-white">Python</li>
+                    <li class="list-group-item bg-info text-white">PostgreSQL</li>
+                    <li class="list-group-item bg-info text-white">Django</li>
+                    <li class="list-group-item bg-info text-white">FastAPI</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section id="work-experience" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 text-primary">Work Experience</h2>
+
+        <!-- Work Entry 1 -->
+        <div class="card mb-4 bg-info text-white">
+            <div class="card-body">
+                <h5 class="card-title">2009 - 2019</h5>
+                <h6 class="card-subtitle bg-info text-white">Location: Dr.Computers Tetovo, North Macedonia</h6>
+                <p class="card-text">
+                    Established and managed a successful computer sales and repair store.
+                    Provided expert troubleshooting and repair services for PCs and laptops.
+                    Surveillance Camera Installation and Configuration Specialist.
+                </p>
+            </div>
+        </div>
+
+        <!-- Work Entry 2 -->
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h5 class="card-title">2009 - 2011</h5>
+                <p class="card-text">
+                    Freelance Front-End Web Developer
+                    Developed custom front-end websites for various stores and restaurants.
+                    Collaborated with clients to understand their specific needs and design preferences.
+                    Utilized HTML, CSS, and JavaScript to create visually appealing and responsive web interfaces.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Information Section -->
+    <section id="contact-info" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-primary">Contact Information</h2>
+            <ul class="list-unstyled text-center">
+                <li><strong>Email:</strong> ibish.s@live.com</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ibish-selmani-b970b0196/" target="_blank" class="text-info">linkedin.com/in/your-profile</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Ibish-DCI-STUDENT" target="_blank" class="text-info">github.com/your-username</a></li>
+                <li><strong>Phone:</strong> +123 456 7890</li>
+            </ul>
+        </div>
+    </section>
+
+
+{% endblock %}

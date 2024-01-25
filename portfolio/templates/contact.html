@@ -1,0 +1,55 @@
+<!-- portfolio/templates/contact.html -->
+{% extends 'base.html' %}
+{% block title %}Contact - Your Portfolio{% endblock %}
+
+{% block content %}
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <p class="text-muted">
+                        If you'd like to get in touch or discuss a potential collaboration, feel free to reach out to me using the form below.
+                    </p>
+                    <!-- Contact Form -->
+                    <form method="post" action="{% url 'contact' %}" class="my-4">
+
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                            <label for="name" class="sr-only">Your Name</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="sr-only">Your Email</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="sr-only">Your Message</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                                </div>
+                                <textarea name="message" id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
